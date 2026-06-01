@@ -1,0 +1,52 @@
+.button {
+  border: 0;
+  cursor: pointer;
+  display: block;
+  font-size: 32px;
+  font-weight: 300;
+  height: 85px;
+  line-height: 85px;
+  margin-left: 0;
+  padding: 0;
+  text-align: center;
+  width: 85px;
+  transition: opacity 0.2s ease-out;
+  font-family: 'Roboto', sans-serif;
+}
+
+.button:hover {
+  opacity: 0.9;
+}
+
+.button:active,
+.button.active {
+  opacity: 0.8;
+}
+
+.number {
+  background-color: #c7c7c7;
+  color: #424346;
+  outline: 1px solid #949599;
+}
+
+.utility {
+  background-color: #afb0b5;
+  color: #424346;
+  outline: 1px solid #949599;
+  font-size: 26px;
+}
+
+.operator {
+  background-color: #f98410;
+  color: #fff6f9;
+  font-size: 36px;
+  outline: 1px solid #ca5200;
+  font-weight: 100;
+  width: 85px;
+}
+
+/* Fix for uncentered × char */
+.operator span {
+  position: relative;
+  top: -5px;
+}
