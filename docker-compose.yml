@@ -1,0 +1,24 @@
+services:
+  app:
+    build:
+      context: .
+      target: dev
+    ports:
+      - '5173:5173'
+    volumes:
+      - .:/app
+      - /app/node_modules
+    environment:
+      - NODE_ENV=development
+
+  storybook:
+    build:
+      context: .
+      target: storybook
+    ports:
+      - '6006:6006'
+    volumes:
+      - .:/app
+      - /app/node_modules
+    environment:
+      - NODE_ENV=development
