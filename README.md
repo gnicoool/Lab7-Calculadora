@@ -2,6 +2,8 @@
 
 Calculadora interactiva construida con React, TypeScript y Vite. Incluye soporte para temas, Storybook y pruebas unitarias.
 
+[Calculadora desplegada en netlify](https://resplendent-marzipan-12c1e8.netlify.app/)
+
 ## Capturas de pantalla
 ![Inicio Default](./Demo/calculadora1.png)
 
