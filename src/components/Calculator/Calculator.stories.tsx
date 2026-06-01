@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react-vite'
-import { ThemeProvider } from '../../Theme/ThemeContext'
+import { ThemeProvider } from '../../Theme/ThemeProvider'
 import Calculator from './Calculator'
-import '../../Themes.css'
+import '../../Theme/Themes.css'
 import './Calculator.css'
 
 const meta = {

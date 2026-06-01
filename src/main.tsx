@@ -1,6 +1,6 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import { ThemeProvider } from './Theme/ThemeContext'
+import { ThemeProvider } from './Theme/ThemeProvider'
 import Calculator from './components/Calculator/Calculator'
 import './Theme/Themes.css'
 

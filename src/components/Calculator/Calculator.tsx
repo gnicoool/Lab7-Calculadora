@@ -2,7 +2,7 @@ import { useEffect } from 'react'
 import Display from '../Display/Display'
 import Button, { KEY_MAP } from '../Button/Button'
 import { useCalculator } from '../../hooks/useCalculator'
-import { useTheme } from '../../Theme/ThemeContext'
+import { useTheme } from '../../Theme/useTheme'
 import './Calculator.css'
 import type { KeyMapEntry } from '../../types/calculadora'
 
@@ -37,7 +37,12 @@ const Calculator = () => {
       <div className="calculator-window">
         <div className="calculator-titlebar">
           <div className="calculator-titlebar-left">
-            <button type="button" className="titlebar-btn titlebar-btn--theme" aria-label="Toggle theme" onClick={toggleTheme}>
+            <button
+              type="button"
+              className="titlebar-btn titlebar-btn--theme"
+              aria-label="Toggle theme"
+              onClick={toggleTheme}
+            >
               ◑
             </button>
             <span>Calculator.exe</span>
