@@ -23,6 +23,7 @@ export interface ButtonProps {
   variant: 'number' | 'operator' | 'utility'
   onClick: (entry: KeyMapEntry) => void
   isActive?: boolean
+  className?: string
 }
 
 export interface DisplayProps {

@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+.theme-root {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  width: 100%;
+  background: var(--color-body-bg, #000);
+  font-family: var(--calc-font, 'Press Start 2P', monospace);
+}
+
+:root,
+[data-theme='octagonal'] {
+  --color-body-bg: #000000;
+  --color-window-bg: #0a2a5e;
+  --color-window-border: #1565c0;
+  --color-titlebar: #0d47a1;
+
+  --color-display-bg: #bbdefb;
+  --color-display-fg: #0d47a1;
+  --color-display-glow: none;
+  --color-display-border: #42a5f5;
+
+  --color-btn-bg: #1565c0;
+  --color-btn-fg: #e3f2fd;
+  --color-btn-border-t: #42a5f5;
+  --color-btn-border-b: #0d47a1;
+  --color-btn-radius: 0px;
+
+  --color-btn-op-bg: #0288d1;
+  --color-btn-op-fg: #e1f5fe;
+  --color-btn-op-border-t: #29b6f6;
+  --color-btn-op-border-b: #01579b;
+
+  --color-btn-clear: #ef9a9a;
+
+  --calc-font: 'Press Start 2P', monospace;
+  --calc-gap: 4px;
+  --calc-pad: 8px;
+}
+
+[data-theme='cyan'] {
+  --color-body-bg: #050505;
+  --color-window-bg: #002b2e;
+  --color-window-border: #00838f;
+  --color-titlebar: #006064;
+
+  --color-display-bg: #001a1b;
+  --color-display-fg: #00e5ff;
+  --color-display-glow: 0 0 6px #00e5ff;
+  --color-display-border: #00838f;
+
+  --color-btn-bg: #003740;
+  --color-btn-fg: #80deea;
+  --color-btn-border-t: #00838f;
+  --color-btn-border-b: #001a1b;
+  --color-btn-radius: 0px;
+
+  --color-btn-op-bg: #00838f;
+  --color-btn-op-fg: #e0f7fa;
+  --color-btn-op-border-t: #4dd0e1;
+  --color-btn-op-border-b: #006064;
+
+  --color-btn-clear: #ff5252;
+
+  --calc-font: 'Press Start 2P', monospace;
+  --calc-gap: 4px;
+  --calc-pad: 8px;
+}

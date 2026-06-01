@@ -27,7 +27,15 @@ const KEY_MAP: Record<number, KeyMapEntry> = {
 
 export { KEY_MAP }
 
-const Button: React.FC<ButtonProps> = ({ label, keyCode, value, variant, onClick, isActive = false }) => {
+const Button: React.FC<ButtonProps> = ({
+  label,
+  keyCode,
+  value,
+  variant,
+  onClick,
+  isActive = false,
+  className = '',
+}) => {
   const handleClick = () => {
     const entry = KEY_MAP[keyCode]
     if (entry) onClick(entry)
@@ -39,7 +47,7 @@ const Button: React.FC<ButtonProps> = ({ label, keyCode, value, variant, onClick
       data-keycode={keyCode}
       value={value}
       onClick={handleClick}
-      className={['button', variant, isActive ? 'active' : ''].filter(Boolean).join(' ')}
+      className={['button', variant, isActive ? 'active' : '', className].filter(Boolean).join(' ')}
     >
       {label}
     </button>
