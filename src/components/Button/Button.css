@@ -1,6 +1,6 @@
 .button {
   font-family: var(--calc-font);
-  font-size: 14px;
+  font-size: var(--calc-btn-font, 22px);
   background: var(--color-btn-bg);
   color: var(--color-btn-fg);
 
@@ -12,21 +12,21 @@
 
   /* forma octagonal — fija para ambos temas */
   clip-path: polygon(
-    4px 0%,
-    calc(100% - 4px) 0%,
-    100% 4px,
-    100% calc(100% - 4px),
-    calc(100% - 4px) 100%,
-    4px 100%,
-    0% calc(100% - 4px),
-    0% 4px
+    var(--calc-btn-clip, 6px) 0%,
+    calc(100% - var(--calc-btn-clip, 6px)) 0%,
+    100% var(--calc-btn-clip, 6px),
+    100% calc(100% - var(--calc-btn-clip, 6px)),
+    calc(100% - var(--calc-btn-clip, 6px)) 100%,
+    var(--calc-btn-clip, 6px) 100%,
+    0% calc(100% - var(--calc-btn-clip, 6px)),
+    0% var(--calc-btn-clip, 6px)
   );
 
   cursor: pointer;
   text-align: center;
   outline: none;
   width: 100%;
-  padding: 16px 4px;
+  padding: var(--calc-btn-pad-y, 26px) 6px;
   line-height: 1;
   transition:
     filter 0.08s ease,

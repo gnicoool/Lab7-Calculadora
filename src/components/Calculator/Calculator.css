@@ -19,8 +19,9 @@
 .calculator-window {
   display: flex;
   flex-direction: column;
-  border: 2px solid var(--color-window-border, #2a3fa0);
+  border: 3px solid var(--color-window-border, #2a3fa0);
   overflow: hidden;
+  width: var(--calc-width, 480px);
 }
 
 /* Barra de título */
@@ -28,8 +29,8 @@
   background: var(--color-titlebar, #1e3db8);
   color: #ffffff;
   font-family: var(--calc-font, 'Press Start 2P', monospace);
-  font-size: 7px;
-  padding: 5px 8px;
+  font-size: var(--calc-titlebar-font, 11px);
+  padding: var(--calc-titlebar-pad, 8px 12px);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -48,7 +49,7 @@
 }
 
 .titlebar-btn--theme {
-  font-size: 8px;
+  font-size: calc(var(--calc-titlebar-btn-font, 9px) + 2px);
   opacity: 0.9;
 }
 
@@ -58,12 +59,12 @@
 }
 
 .titlebar-btn {
-  width: 14px;
-  height: 12px;
+  width: var(--calc-titlebar-btn-w, 22px);
+  height: var(--calc-titlebar-btn-h, 18px);
   background: var(--color-btn-bg, #2a4bbb);
   border: 1px solid var(--color-btn-border-t, #4a6bdb);
   color: #ffffff;
-  font-size: 6px;
+  font-size: var(--calc-titlebar-btn-font, 9px);
   font-family: var(--calc-font, 'Press Start 2P', monospace);
   display: flex;
   align-items: center;
@@ -77,9 +78,9 @@
   background: var(--color-window-bg, #1a2a6e);
   display: flex;
   flex-direction: column;
-  gap: var(--calc-gap, 6px);
-  padding: var(--calc-pad, 10px);
-  width: 280px;
+  gap: var(--calc-gap, 8px);
+  padding: var(--calc-pad, 14px);
+  width: 100%;
   font-family: var(--calc-font, 'Press Start 2P', monospace);
 }
 
